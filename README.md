@@ -35,27 +35,27 @@ An intelligent, multi-agent system that retrieves and analyzes real-time financi
 ## Setup
 
 ### 1. Clone the Repo
-
-```bash
+```
+bash
 git clone https://github.com/your-username/financial-news-analyzer.git
 cd financial-news-analyzer
 ```
 
 ### 2. Install Dependencies
-
-```pip install -r requirements.txt
+```
+pip install -r requirements.txt
 ```
 
 ### 3. Set Up Environment Variables
+```
+Create a .env file in the root directory and add your environment variables (e.g., OpenAI API keys).
 
-```Create a .env file in the root directory and add your environment variables (e.g., OpenAI API keys).
-
-OPENAI_API_KEY=your_api_key_here
+OPENAI_API_KEY="your_api_key_here"
 ```
 
 ### 4. Start PostgreSQL
-
-```Ensure you have a local PostgreSQL instance running. Update the db_url in the code if needed.
+```
+Ensure you have a local PostgreSQL instance running. Update the db_url in the code if needed.
 
 Example:
 
@@ -64,8 +64,8 @@ docker run -d --name postgres -e POSTGRES_USER=ai -e POSTGRES_PASSWORD=ai -e POS
 ```
 
 ### 5. Run the App
-
-```python app.py
+```
+python app.py
 
 Then open http://localhost:8000 in your browser to interact with the Playground.
 
